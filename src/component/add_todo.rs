@@ -31,6 +31,9 @@ pub fn AddTodo() -> Html {
             if &item.len() < &3 {
                 return; 
             };
+
+            
+
             let mut listdata: Vec<Todo> = vec![];
             let localstoreage = &window().unwrap().local_storage().unwrap().unwrap();
             let oldTodo = &localstoreage.get_item("Todo").unwrap().unwrap();
